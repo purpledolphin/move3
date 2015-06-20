@@ -1,29 +1,28 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_stutter" id="75" x="320" y="41">
-    <next>
-      <block type="movement_left" id="150">
+  <block type="controls_repeat" id="387" inline="true" x="245" y="139">
+    <value name="TIMES">
+      <block type="math_number" id="394">
+        <field name="NUM">4</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="404">
         <next>
-          <block type="movement_right" id="160">
+          <block type="robot_delay" id="412" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="419">
+                <field name="NUM">4000</field>
+              </block>
+            </value>
             <next>
-              <block type="movement_stutter" id="287">
+              <block type="movement_right" id="429">
                 <next>
-                  <block type="movement_forward" id="316">
-                    <next>
-                      <block type="robot_delay" id="77" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="252">
-                            <field name="NUM">1000</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="movement_right" id="225">
-                            <next>
-                              <block type="movement_stop" id="363"></block>
-                            </next>
-                          </block>
-                        </next>
+                  <block type="robot_delay" id="430" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="431">
+                        <field name="NUM">1300</field>
                       </block>
-                    </next>
+                    </value>
                   </block>
                 </next>
               </block>
@@ -31,6 +30,9 @@
           </block>
         </next>
       </block>
+    </statement>
+    <next>
+      <block type="movement_stop" id="441"></block>
     </next>
   </block>
 </xml>
