@@ -20,9 +20,13 @@
                             <field name="NUM">2</field>
                           </block>
                         </value>
-                        <statement name="DO">
-                          <block type="movement_right" id="225"></block>
-                        </statement>
+                        <next>
+                          <block type="movement_forward" id="316">
+                            <next>
+                              <block type="movement_right" id="225"></block>
+                            </next>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
